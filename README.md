@@ -14,8 +14,12 @@ Why it's useful:
 This strengthens understandinng of string manipulation, sorting algorithgms, and Python's built-in functions. It's a good starting point for handling text-based data.
 
 How to get started:
-a("hello")   # Output: "ehllo"
-a("hacker")  # Output: "acehkr"
+
+a("hello")
+Output: "ehllo"
+
+a("hacker")
+Output: "acehkr"
 
 
 **PROBLEM 2: Emoticon Converter**
@@ -27,8 +31,12 @@ Why it's useful:
 This exercise helps practice string replacement and conditional logic, which ae key in text processing and chat applications.
 
 How to get started:
-emotify("Make me smile")   # Output: "Make me :)"
-emotify("I am mad")        # Output: "I am >:("
+
+emotify("Make me smile")
+Output: "Make me :)"
+
+emotify("I am mad")
+Output: "I am >:("
 
 
 **PROBLEM 3: Unpacking List**
@@ -40,8 +48,13 @@ Why it's useful:
 This improves understandng of list slicing and unpacking, a common task in data handling and algorithm design.
 
 How to get started:
+
 lst = [1, 2, 3, 4, 5, 6]
+
 Output:
+
 first: 1
+
 middle: [2, 3, 4, 5]
+
 last: 6
