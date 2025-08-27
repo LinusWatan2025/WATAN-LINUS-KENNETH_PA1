@@ -6,6 +6,7 @@ WATAN, LINUS KENNETH C.
 This repository contains the solutions for PA1 of the Advanced Computer Programmng and Algorightms (ECE2112) course. The project introduces fundamental Python concepts such as string manipulation, list operations, and function design. Each problem is structed to build logical thinking and coding efficiency, especially for beginners.
 
 **PROBLEM 1: Alphabet Soup**
+
 What it is:
 A function that takes a string and rearranges its letters in alphabetical order.
 
@@ -18,6 +19,7 @@ a("hacker")  # Output: "acehkr"
 
 
 **PROBLEM 2: Emoticon Converter**
+
 What it is:
 A function that replaces specific words (smile, grin, sad, mad) with their corresponding emoticons.
 
@@ -30,6 +32,7 @@ emotify("I am mad")        # Output: "I am >:("
 
 
 **PROBLEM 3: Unpacking List**
+
 What it is:
 A program that unpacks a list into three variables: first, middle, and last, wiht middle containing everything between the two ends.
 
