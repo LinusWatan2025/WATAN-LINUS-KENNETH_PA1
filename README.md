@@ -14,7 +14,7 @@ A function that takes a string and rearranges its letters in alphabetical order.
 **Why it's useful:**
 This strengthens understandinng of string manipulation, sorting algorithgms, and Python's built-in functions. It's a good starting point for handling text-based data.
 
-How to get started:
+**How to get started:**
 
 a("hello")
 Output: "ehllo"
@@ -32,7 +32,7 @@ A function that replaces specific words (smile, grin, sad, mad) with their corre
 **Why it's useful:**
 This exercise helps practice string replacement and conditional logic, which ae key in text processing and chat applications.
 
-How to get started:
+**How to get started:**
 
 emotify("Make me smile")
 Output: "Make me :)"
@@ -50,7 +50,7 @@ A program that unpacks a list into three variables: first, middle, and last, wih
 **Why it's useful:**
 This improves understandng of list slicing and unpacking, a common task in data handling and algorithm design.
 
-How to get started:
+**How to get started:**
 
 lst = [1, 2, 3, 4, 5, 6]
 
