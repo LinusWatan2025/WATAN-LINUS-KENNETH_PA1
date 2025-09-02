@@ -2,7 +2,7 @@ WATAN, LINUS KENNETH C.
 2ECE-A
 
 # PYTHON PROGRAMMING EXERCISES PA1
-**OVERVIEW**
+**OVERVIEW:**
 This repository contains the solutions for PA1 of the Advanced Computer Programmng and Algorightms (ECE2112) course. The project introduces fundamental Python concepts such as string manipulation, list operations, and function design. Each problem is structed to build logical thinking and coding efficiency, especially for beginners.
 
 
@@ -29,11 +29,9 @@ r = a(w)
 #the program outputs the alphabetized form
 print("Alphabetized form: ", r)
 ```
-a("hello")
-Output: "ehllo"
+**Output**
 
-a("hacker")
-Output: "acehkr"
+<img width="264" height="23" alt="image" src="https://github.com/user-attachments/assets/5af4bb1a-dd3e-4d66-9a12-ca308f97ad73" />
 
 
 
@@ -46,12 +44,35 @@ A function that replaces specific words (smile, grin, sad, mad) with their corre
 This exercise helps practice string replacement and conditional logic, which ae key in text processing and chat applications.
 
 **How to get started:**
+```python
+#defining the function
+def emotify(s):
+    #dictionary assigning the given word to emoticons
+    e = {
+        "smile": ":)",
+        "grin": ":D",
+        "sad": ":(",
+        "mad": ">:("
+    }
+    #loop to replace word in the given sentence
+    for word, icon in e.items():
+        #function that replaces the word to the assigned emoticon
+        s = s.replace(word, icon)
+    #returns the updated the sentence
+    return s
 
-emotify("Make me smile")
-Output: "Make me :)"
+#main program
+#user inputs a sentence
+i = input("Enter a sentence: ")
+r = emotify(i)
 
-emotify("I am mad")
-Output: "I am >:("
+#the programs calls the function and converts the words with their assigned emoticon
+print("Converted sentence:", r)
+```
+**Output**
+
+<img width="306" height="26" alt="image" src="https://github.com/user-attachments/assets/a88b1178-4b92-49ed-8838-42aff4314c9b" />
+
 
 
 
@@ -64,13 +85,24 @@ A program that unpacks a list into three variables: first, middle, and last, wih
 This improves understandng of list slicing and unpacking, a common task in data handling and algorithm design.
 
 **How to get started:**
+```python
+#user inputs list separated by spaces
+i = input("Enter list separated by spaces: ")
 
-lst = [1, 2, 3, 4, 5, 6]
+#split input into a list
+list = i.split()
+#converts the string into integers
+l = map(int, list)
 
-Output:
+#unpack into first, middle, and last
+first, *middle, last = l
 
-first: 1
+#print results
+print("first:", first)
+print("middle:", middle)
+print("last:", last)
+```
+**Output**
 
-middle: [2, 3, 4, 5]
+<img width="182" height="54" alt="image" src="https://github.com/user-attachments/assets/618d06c2-c0b0-484f-a36e-3557174098fa" />
 
-last: 6
