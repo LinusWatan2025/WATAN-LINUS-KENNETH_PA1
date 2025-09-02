@@ -15,7 +15,20 @@ A function that takes a string and rearranges its letters in alphabetical order.
 This strengthens understandinng of string manipulation, sorting algorithgms, and Python's built-in functions. It's a good starting point for handling text-based data.
 
 **How to get started:**
+```python
+#defining the function
+def a(word):
+    #using sorting function and return the alphabetized/sorted string
+    return "".join(sorted(word))
 
+#user inputs a string
+w = input("Enter a string: ")
+#the program calls the function
+r = a(w)
+
+#the program outputs the alphabetized form
+print("Alphabetized form: ", r)
+```
 a("hello")
 Output: "ehllo"
 
