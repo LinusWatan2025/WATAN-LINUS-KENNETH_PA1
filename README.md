@@ -2,12 +2,6 @@
 
 This repository contains the solutions for **PA1 of the Advanced Computer Programming and Algorithms (ECE2112)** course. The project introduces fundamental Python concepts such as **string manipulation, list operations, and function design**. Each problem is structured to build logical thinking and coding efficiency, especially for beginners.
 
-By completing this exercise, students practice how to:
-
-* Work with **strings** using Python’s built-in functions.
-* Implement **conditional logic and replacement** with dictionaries.
-* Use **list slicing and unpacking** to process sequences.
-
 ---
 
 ## PROBLEM 1: Alphabet Soup
@@ -16,27 +10,32 @@ By completing this exercise, students practice how to:
 
 A function that takes a string and rearranges its letters in alphabetical order.
 
-**Why it’s useful:**
+**Why it's useful:**
 
-This problem teaches **string sorting and manipulation**, which is a foundation for handling text-based datasets and algorithms that rely on ordering.
+This strengthens understanding of **string manipulation, sorting algorithms, and Python's built-in functions**. It’s a good starting point for handling text-based data.
 
 **How to get started:**
 
-The program defines a function `a()` that uses Python’s built-in `sorted()` to reorder the letters of the input word, then joins them back into a string.
+First, define a function that takes a word as input. The built-in `sorted()` function arranges the characters alphabetically, and `"".join()` merges them back into a single string.
 
 ```python
-# define a function that alphabetizes letters
+#defining the function
 def a(word):
-    return "".join(sorted(word))  # sort the letters and join them
+    #using sorting function and return the alphabetized string
+    return "".join(sorted(word))
+```
 
-# user input
+Next, allow the user to enter a string and pass it into the function. The result is stored and then displayed.
+
+```python
+#user inputs a string
 w = input("Enter a string: ")
 
-# call the function
+#the program calls the function
 r = a(w)
 
-# output the alphabetized result
-print("Alphabetized form: ", r)
+#the program outputs the alphabetized form
+print("Alphabetized form:", r)
 ```
 
 **Output:**
@@ -49,34 +48,42 @@ print("Alphabetized form: ", r)
 
 **What it is:**
 
-A function that replaces specific words (`smile`, `grin`, `sad`, `mad`) with their corresponding emoticons.
+A function that replaces specific words (smile, grin, sad, mad) with their corresponding emoticons.
 
-**Why it’s useful:**
+**Why it's useful:**
 
-This exercise helps practice string replacement and conditional logic, which ae key in text processing and chat applications.
+This exercise helps practice **string replacement and conditional logic**, which are key in text processing and chat applications.
 
 **How to get started:**
 
-The program defines a dictionary that maps words to emoticons, loops through each entry, and replaces occurrences in the input sentence.
+First, define a function and create a dictionary mapping words to emoticons. Using `.replace()`, each matching word in the string is replaced with its corresponding symbol.
 
 ```python
-# define a function for emoticon conversion
+#defining the function
 def emotify(s):
-    e = {  # dictionary for mapping
+    #dictionary assigning the given word to emoticons
+    e = {
         "smile": ":)",
         "grin": ":D",
         "sad": ":(",
         "mad": ">:("
     }
-    for word, icon in e.items():   # loop through dictionary
-        s = s.replace(word, icon)  # replace words with icons
+    #loop to replace word in the given sentence
+    for word, icon in e.items():
+        s = s.replace(word, icon)  #replace words with emoticons
     return s
+```
 
-# main program
-i = input("Enter a sentence: ")  # user input
-r = emotify(i)                   # convert sentence
+Next, accept input from the user, call the function, and display the updated sentence.
 
-print("Converted sentence:", r)  # display result
+```python
+#main program
+i = input("Enter a sentence: ")
+
+#the program calls the function and converts words to emoticons
+r = emotify(i)
+
+print("Converted sentence:", r)
 ```
 
 **Output:**
@@ -89,28 +96,36 @@ print("Converted sentence:", r)  # display result
 
 **What it is:**
 
-A program that unpacks a list into three variables: **first, middle, and last**, with `middle` containing everything between the two ends.
+A program that unpacks a list into three variables: **first, middle, and last**, with middle containing everything in between.
 
-**Why it’s useful:**
+**Why it's useful:**
 
-This improves understanding of **list slicing and unpacking**, which are essential in data structures, algorithms, and scenarios where elements must be separated for further processing.
+This improves understanding of **list slicing and unpacking**, which are common in data handling and algorithm design.
 
 **How to get started:**
 
-The program takes a space-separated list as input, converts it into integers, and uses Python’s **extended iterable unpacking** to assign first, middle, and last values.
+First, request a list from the user, split it into elements, and convert them into integers for processing.
 
 ```python
-# input list
+#user inputs list separated by spaces
 i = input("Enter list separated by spaces: ")
 
-# convert string into list of integers
+#split input into a list and convert to integers
 list = i.split()
 l = map(int, list)
+```
 
-# unpack into first, middle, last
+Next, unpack the list into three parts: the first element, the last element, and everything in between.
+
+```python
+#unpack into first, middle, and last
 first, *middle, last = l
+```
 
-# display results
+Finally, print the results to show the separation.
+
+```python
+#print results
 print("first:", first)
 print("middle:", middle)
 print("last:", last)
